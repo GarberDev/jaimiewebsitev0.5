@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaimie Garber - Dog Trainer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Jaimie Garber</a>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 nav-link">About</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 nav-link">Services</a>
+                <a href="#qualifications" class="text-gray-600 hover:text-blue-600 nav-link">Qualifications</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 nav-link">Contact</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="#about" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">About</a>
+            <a href="#services" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">Services</a>
+            <a href="#qualifications" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">Qualifications</a>
+            <a href="#contact" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">About Jaimie Garber</h2>
+            
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                 <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+            
+                     <div class="text-lg leading-relaxed text-center md:text-left">
+                        <p class="mb-4">
+                             Southern California native Jaimie Garber, certified by the Council for Professional Dog Trainers, passionately provides comprehensive pet care, specializing in strengthening the bond between pets and owners. She cherishes her roles as a professional, wife, and mother.
+                        </p>
+                        <p class="mb-4">
+                            Born and raised in Southern California, I've dedicated my life to serving our local animal community. My journey in animal care began in 2004 at a local veterinary office, where I gained invaluable hands-on experience.
+                        </p>
+                         <p class="mb-4">
+                            Pursuing further education, I enrolled in Moorpark College's prestigious Exotic Animal Training and Management (E.A.T.M.) program. This rigorous curriculum provided comprehensive understanding of animal behavior and training techniques across various species. I proudly earned Associate in Science degrees in both Animal Training and Animal Behavior, equipping me with a strong theoretical foundation to complement my practical experience.
+                        </p>
+                         <p class="mb-4">
+                             To further enhance my expertise, particularly in canine behavior, I undertook the challenging process of certification with the Certification Council for Professional Dog Trainers (CCPDT). This internationally recognized certification demands extensive knowledge and hands-on experience, ensuring that certified trainers meet the highest standards in the field. Achieving this certification underscores my commitment to providing top-tier, scientifically-based training services to our community's dogs and their owners.
+                        </p>
+                        <p class="mb-4">
+                            My greatest satisfaction comes from transforming relationships between owners and their pets. Watching these bonds grow into lifelong friendships is truly rewarding.
+                        </p>
+                        <p>
+                            Outside of work, I'm happily married to my supportive husband, Justin Garber, and we're proud parents of two wonderful children. Balancing my roles as a professional, wife, and mother is challenging but immensely fulfilling. Every day, I look forward to making a difference in the lives of animals and their owners while cherishing moments with my family. This commitment to both my community and loved ones forms the heart of who I am and what I do.
+                        </p>
+                        <div class="mt-6 flex justify-center md:justify-start space-x-4">
+                             <a href="mailto:jaimiegarber@gmail.com" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Email Me</a>
+                             <a href="tel:+16617143945" class="inline-block bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">Call 661-714-3945</a>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="services" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Training Services & Philosophy</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Why Train?</h3>
+                    <p class="leading-relaxed mb-4">
+                        Proper training is the key to a well-adjusted, happy pet. As your dedicated dog trainer, I focus on strengthening your bond with your furry companion, teaching them essential commands, and curbing any negative behavior. Let's nurture a harmonious relationship together.
+                    </p>
+                    <a href="#contact" class="text-blue-600 hover:underline font-medium">Learn More &raquo;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-green-600">How We Train</h3>
+                    <p class="leading-relaxed mb-4">
+                        As a certified dog trainer, I use a combination of positive reinforcement and assertive techniques, individually tailored to your dog's unique personality and requirements. Witness the transformative journey as your dog grows and learns under expert guidance.
+                    </p>
+                     <a href="#qualifications" class="text-green-600 hover:underline font-medium">Learn More &raquo;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-purple-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-purple-600">What We Offer</h3>
+                    <p class="leading-relaxed mb-4">
+                        From basic obedience to advanced trick training, my comprehensive programs cater to dogs of all breeds and ages. I offer in-home, group, and private sessions, all while prioritizing your convenience and your pet's comfort. Gift your canine companion the advantage of good manners.
+                    </p>
+                     <a href="#in-home-training" class="text-purple-600 hover:underline font-medium">Learn More &raquo;</a>
+                </div>
+            </div>
+
+             <div id="in-home-training" class="bg-blue-50 p-8 rounded-lg shadow-md mb-12 scroll-mt-16">
+                 <h3 class="text-2xl font-bold mb-6 text-center text-blue-700">In-Home Dog Training</h3>
+                 <div class="grid md:grid-cols-2 gap-8 items-start">
+                     <div>
+                        <p class="text-lg leading-relaxed mb-4">
+                            I offer personalized in-home dog training designed to fit your dog's unique needs and your lifestyle. I come to you, making training convenient and comfortable for both you and your furry friend in the Southern California area.
+                        </p>
+                        <h4 class="text-xl font-semibold mb-3 text-blue-600">Why Choose In-Home Training?</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                            <li><strong>Convenience:</strong> No need to travel to a training facility.</li>
+                            <li><strong>Personalized Attention:</strong> Focused training tailored to your dog.</li>
+                            <li><strong>Reduced Stress:</strong> Training in a familiar environment.</li>
+                            <li><strong>Address Specific Issues:</strong> Target problem behaviors where they happen.</li>
+                        </ul>
+                         <h4 class="text-xl font-semibold mb-3 text-blue-600">What's Included?</h4>
+                         <p class="mb-4">Each session is tailored to your dog's specific needs and may include:</p>
+                         <ul class="list-disc list-inside space-y-2 text-gray-700 columns-2">
+                            <li>Basic obedience</li>
+                            <li>Leash training</li>
+                            <li>Potty training</li>
+                            <li>Jumping</li>
+                            <li>Chewing</li>
+                            <li>Barking</li>
+                            <li>Separation anxiety</li>
+                            <li>Reactivity (dog & people)</li>
+                            <li>Fear & Aggression</li>
+                            <li>Customized training plan</li>
+                            <li>Ongoing support</li>
+                         </ul>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-inner">
+                         <h4 class="text-xl font-semibold mb-4 text-blue-600 text-center">Pricing</h4>
+                         <div class="space-y-4 text-center">
+                             <div class="border border-gray-200 p-4 rounded-md">
+                                 <p class="text-lg font-medium">Single Session</p>
+                                 <p class="text-2xl font-bold text-blue-700">$200</p>
+                             </div>
+                             <div class="border border-blue-300 bg-blue-100 p-4 rounded-md">
+                                 <p class="text-lg font-medium">Package of 4 Sessions</p>
+                                 <p class="text-2xl font-bold text-blue-700">$600</p>
+                                 <p class="text-sm text-green-600 font-semibold">(Save $200!)</p>
+                             </div>
+                             <div class="border border-gray-200 p-4 rounded-md">
+                                 <p class="text-lg font-medium">Multi-Dog Charge</p>
+                                 <p class="text-xl font-bold text-blue-700">$50</p>
+                                 <p class="text-sm text-gray-600">(per session, per additional dog)</p>
+                             </div>
+                         </div>
+                          <div class="mt-6 text-center">
+                             <a href="#contact" class="inline-block bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition duration-300 text-lg font-medium">Get Started</a>
+                             <p class="text-sm text-gray-600 mt-2">Contact me today for a free consultation!</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+        </section>
+
+        <section id="qualifications" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">My Qualifications</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg flex items-start gap-6">
+                     <svg class="w-12 h-12 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 00-5.656 0H0v1.667h.611a3.066 3.066 0 005.656 0H18v-1.667h-.611a3.066 3.066 0 00-5.656 0H6.267zm8.076 1.667H18v1.067h-.611a3.066 3.066 0 01-5.656 0H6.267a3.066 3.066 0 01-5.656 0H0V8.855h.611a3.066 3.066 0 015.656 0h5.467a3.066 3.066 0 015.656 0H18V6.188zm-3.467 4.78H18v1.067h-.611a3.066 3.066 0 01-5.656 0H6.267a3.066 3.066 0 01-5.656 0H0v-1.067h.611a3.066 3.066 0 015.656 0h5.467a3.066 3.066 0 015.656 0H14.876zm-3.467 3.71H18v1.667h-.611a3.066 3.066 0 01-5.656 0H6.267a3.066 3.066 0 01-5.656 0H0v-1.667h.611a3.066 3.066 0 015.656 0h5.467a3.066 3.066 0 015.656 0H11.409z" clip-rule="evenodd"></path></svg>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2 text-blue-600">Certification Council for Professional Dog Trainers (CCPDT)</h3>
+                        <p class="leading-relaxed">
+                            Being a Dog Trainer Certified by the CCPDT (CPDT-KA) is an esteemed certification and a testament to a trainer's comprehensive understanding of canine behavior and proven training techniques. With such a professional, you are ensuring your dog receives a high-quality, scientifically-informed, and humane approach to training.
+                        </p>
+                    </div>
+                </div>
+                 <div class="bg-white p-8 rounded-lg shadow-lg flex items-start gap-6">
+                    <svg class="w-12 h-12 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 011.087-.225l1.884.942A1.002 1.002 0 009 9.94l.336-1.68a1 1 0 00-.788-1.18l-1.37-.49a1 1 0 00-.868.45l-1.5 2.5a1 1 0 00.215 1.39L9 15.561V18h2v-2.439l5.408-6.276a1 1 0 00.215-1.39l-1.5-2.5a1 1 0 00-.868-.45l-1.37.49a1 1 0 00-.788 1.18l.336 1.68a1 1 0 001.564.103l1.884-.942a.999.999 0 011.087.225L17 6.92a1 1 0 000-1.84l-7-3zM10 8a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                     <div>
+                        <h3 class="text-2xl font-semibold mb-2 text-blue-600">Teaching Zoo at Moorpark College (E.A.T.M. Program)</h3>
+                        <p class="leading-relaxed">
+                            Equipped with hands-on animal behavior knowledge and experience from this prestigious program, graduates bring a unique, multifaceted approach to dog training. This broad educational background ensures a thorough understanding of your dog's needs and the best methods to address them, drawing from experience with diverse species.
+                        </p>
+                    </div>
+                </div>
+                 <div class="bg-white p-8 rounded-lg shadow-lg flex items-start gap-6">
+                     <svg class="w-12 h-12 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                     <div>
+                        <h3 class="text-2xl font-semibold mb-2 text-blue-600">Veterinary Experience</h3>
+                        <p class="leading-relaxed">
+                            A trainer with extensive veterinary experience has a profound understanding of your pet's health, behavior, and overall wellbeing. This blend of medical and behavioral knowledge helps design a balanced, safe, and effective training program tailored to your dog's specific needs and physical condition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Start Your Dog Training Today!</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <p class="text-xl mb-6 leading-relaxed">
+                    Ready to start training or have questions? Contact me today to discuss your dog's needs and schedule a consultation. Let's work together to build a happier relationship with your dog!
+                </p>
+                <div class="space-y-4 mb-8">
+                    <p class="text-lg">
+                        <span class="font-semibold">Email:</span>
+                        <a href="mailto:jaimiegarber@gmail.com" class="text-blue-600 hover:underline">jaimiegarber@gmail.com</a>
+                    </p>
+                    <p class="text-lg">
+                        <span class="font-semibold">Phone:</span>
+                        <a href="tel:+16617143945" class="text-blue-600 hover:underline">661-714-3945</a>
+                    </p>
+                     <p class="text-gray-600 mt-2">Serving Southern California and surrounding areas.</p>
+                </div>
+                 <div class="pt-6 border-t border-gray-200 max-w-lg mx-auto">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Quick Contact Form</h3>
+                    <form id="contact-form" action="#" method="POST" class="space-y-4"> <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 text-left">Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                         </div>
+                         <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 text-left">Email</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                         </div>
+                         <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 text-left">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                         </div>
+                         <div>
+                            <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Send Message
+                            </button>
+                         </div>
+                    </form>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-16 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> Jaimie Garber Dog Training. All rights reserved.</p>
+            <p class="text-sm mt-2">Serving Southern California | <a href="mailto:jaimiegarber@gmail.com" class="hover:underline">jaimiegarber@gmail.com</a> | <a href="tel:+16617143945" class="hover:underline">661-714-3945</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>

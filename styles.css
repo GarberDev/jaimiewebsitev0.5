@@ -1,0 +1,28 @@
+/* Import Google Font (Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Apply Poppins font globally */
+body {
+    font-family: 'Poppins', sans-serif; /* Updated font */
+}
+
+/* Simple mobile menu transition */
+#mobile-menu {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for active nav link (optional) */
+/* Add JS to handle active state based on scroll position if needed */
+.nav-link.active {
+     font-weight: bold;
+     /* Add other active styles */
+}
+
+/* Add some extra margin-top to sections for the sticky header */
+section {
+     scroll-margin-top: 60px; /* Adjust based on header height */
+}
+
+/* Note: Tailwind CSS classes handle most styling.
+   This file is mainly for global styles like fonts,
+   transitions, or custom CSS overrides if needed. */
