@@ -26,3 +26,44 @@ section {
 /* Note: Tailwind CSS classes handle most styling.
    This file is mainly for global styles like fonts,
    transitions, or custom CSS overrides if needed. */
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-top: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#successModal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}

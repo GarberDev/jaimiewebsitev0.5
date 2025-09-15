@@ -2,10 +2,10 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaimie Garber - Dog Trainer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaimie Garber - Dog Trainer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -192,44 +192,26 @@
         </section>
 
         <section id="contact">
-            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Start Your Dog Training Today!</h2>
-            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
-                <p class="text-xl mb-6 leading-relaxed">
-                    Ready to start training or have questions? Contact me today to discuss your dog's needs and schedule a consultation. Let's work together to build a happier relationship with your dog!
-                </p>
-                <div class="space-y-4 mb-8">
-                    <p class="text-lg">
-                        <span class="font-semibold">Email:</span>
-                        <a href="mailto:jaimiegarber@gmail.com" class="text-blue-600 hover:underline">jaimiegarber@gmail.com</a>
-                    </p>
-                    <p class="text-lg">
-                        <span class="font-semibold">Phone:</span>
-                        <a href="tel:+16617143945" class="text-blue-600 hover:underline">661-714-3945</a>
-                    </p>
-                     <p class="text-gray-600 mt-2">Serving Southern California and surrounding areas.</p>
-                </div>
-                 <div class="pt-6 border-t border-gray-200 max-w-lg mx-auto">
-                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Quick Contact Form</h3>
-                    <form id="contact-form" action="#" method="POST" class="space-y-4"> <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 text-left">Name</label>
-                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                         </div>
-                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 text-left">Email</label>
-                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                         </div>
-                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 text-left">Message</label>
-                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
-                         </div>
-                         <div>
-                            <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                                Send Message
-                            </button>
-                         </div>
-                    </form>
-                 </div>
+          <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Start Your Dog Training Today!</h2>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <p class="text-xl mb-6 leading-relaxed">
+              Ready to start training or have questions? Contact me today to discuss your dog's needs and schedule a consultation. Let's work together to build a happier relationship with your dog!
+            </p>
+            <div class="space-y-4 mb-8">
+              <p class="text-lg">
+                <span class="font-semibold">Email:</span>
+                <a href="mailto:jaimiegarber@gmail.com" class="text-blue-600 hover:underline">jaimiegarber@gmail.com</a>
+              </p>
+              <p class="text-lg">
+                <span class="font-semibold">Phone:</span>
+                <a href="tel:+16617143945" class="text-blue-600 hover:underline">661-714-3945</a>
+              </p>
+              <p class="text-gray-600 mt-2">Serving Southern California and surrounding areas.</p>
             </div>
+            <div class="pt-6 border-t border-gray-200 max-w-lg mx-auto">
+
+            </div>
+          </div>
         </section>
 
     </main>
@@ -242,6 +224,14 @@
     </footer>
 
     <script src="script.js" defer></script>
+
+    <!-- Success Modal -->
+<div id="successModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg shadow-lg p-8 text-center max-w-sm">
+    <p class="text-2xl font-bold mb-4 text-blue-700">✅ Thanks! Your message has been sent.</p>
+    <button onclick="document.getElementById('successModal').classList.add('hidden')" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Close</button>
+  </div>
+</div>
 
 </body>
 </html>
