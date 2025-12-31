@@ -2,32 +2,66 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaimie Garber - Dog Trainer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaimie Garber | Dog Training San Dimas, La Verne & Claremont | SGV Professional Trainer</title>
+    <meta name="description" content="Professional, certified in-home dog training serving San Dimas, La Verne, Claremont, and the San Gabriel Valley. Specialized behavior modification and obedience.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Smooth scroll margin for sticky header */
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        /* SEO Emphasis */
+        strong {
+            color: #1e40af; /* Tailwind blue-800 */
+            font-weight: 600;
+        }
+
+        /* Mobile Menu Transition */
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Custom subtle gradients for that modern LA look */
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-   <a href="#" class="text-2xl font-bold flex items-center">
-      <span class="text-blue-600 font-bold" >
-        Jaimie Garber
-      </span>
-      <span class="text-black font-normal ml-2" style="font-family: 'Brush Script MT', cursive, 'Poppins', sans-serif;">
-        - Dog Training
-      </span>
-    </a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#about" class="text-gray-600 hover:text-blue-600 nav-link">About</a>
-                <a href="#services" class="text-gray-600 hover:text-blue-600 nav-link">Services</a>
-                <a href="#qualifications" class="text-gray-600 hover:text-blue-600 nav-link">Qualifications</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-600 nav-link">Contact</a>
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-blue-600">
+                Jaimie Garber 
+                <span class="text-xs font-light text-gray-400 block uppercase tracking-widest">SGV Dog Training</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-8 items-center text-sm font-medium tracking-wide">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+                <a href="#qualifications" class="text-gray-600 hover:text-blue-600 transition-colors">Qualifications</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition-all shadow-md hover:shadow-lg">Contact</a>
             </div>
 
+            <!-- Mobile Toggle -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                <button id="mobile-menu-button" class="text-gray-600 p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
@@ -35,209 +69,269 @@
             </div>
         </nav>
 
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
-            <a href="#about" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">About</a>
-            <a href="#services" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">Services</a>
-            <a href="#qualifications" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">Qualifications</a>
-            <a href="#contact" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-blue-600 nav-link">Contact</a>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-xl">
+            <a href="#about" class="block px-6 py-4 text-gray-600 hover:bg-gray-50">About</a>
+            <a href="#services" class="block px-6 py-4 text-gray-600 hover:bg-gray-50">Services</a>
+            <a href="#qualifications" class="block px-6 py-4 text-gray-600 hover:bg-gray-50">Qualifications</a>
+            <a href="#contact" class="block px-6 py-4 text-blue-600 font-bold hover:bg-gray-50">Contact Now</a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
+    <main>
+        <!-- Hero/Intro Section -->
+        <section class="hero-gradient py-20 px-6 text-center">
+            <div class="container mx-auto max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                    Expert Dog Training in the <span class="text-blue-600">San Gabriel Valley</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+                    Certified, professional in-home training designed for families in <strong>San Dimas, La Verne, and Claremont</strong>.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-blue-700 transition-all">Start Your Journey</a>
+                    <a href="tel:+16617143945" class="bg-white text-gray-800 border border-gray-200 px-8 py-4 rounded-lg font-bold shadow-sm hover:bg-gray-50 transition-all">Call 661-714-3945</a>
+                </div>
+            </div>
+        </section>
 
-        <section id="about" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">About Jaimie Garber</h2>
-            
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-                 <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-            
-                     <div class="text-lg leading-relaxed text-center md:text-left">
-                        <p class="mb-4">
-                             Southern California native Jaimie Garber, certified by the Council for Professional Dog Trainers, passionately provides comprehensive pet care, specializing in strengthening the bond between pets and owners. She cherishes her roles as a professional, wife, and mother.
-                        </p>
-                        <p class="mb-4">
-                            Born and raised in Southern California, I've dedicated my life to serving our local animal community. My journey in animal care began in 2004 at a local veterinary office, where I gained invaluable hands-on experience.
-                        </p>
-                         <p class="mb-4">
-                            Pursuing further education, I enrolled in Moorpark College's prestigious Exotic Animal Training and Management (E.A.T.M.) program. This rigorous curriculum provided comprehensive understanding of animal behavior and training techniques across various species. I proudly earned Associate in Science degrees in both Animal Training and Animal Behavior, equipping me with a strong theoretical foundation to complement my practical experience.
-                        </p>
-                         <p class="mb-4">
-                             To further enhance my expertise, particularly in canine behavior, I undertook the challenging process of certification with the Certification Council for Professional Dog Trainers (CCPDT). This internationally recognized certification demands extensive knowledge and hands-on experience, ensuring that certified trainers meet the highest standards in the field. Achieving this certification underscores my commitment to providing top-tier, scientifically-based training services to our community's dogs and their owners.
-                        </p>
-                        <p class="mb-4">
-                            My greatest satisfaction comes from transforming relationships between owners and their pets. Watching these bonds grow into lifelong friendships is truly rewarding.
-                        </p>
-                        <p>
-                            Outside of work, I'm happily married to my supportive husband, Justin Garber, and we're proud parents of two wonderful children. Balancing my roles as a professional, wife, and mother is challenging but immensely fulfilling. Every day, I look forward to making a difference in the lives of animals and their owners while cherishing moments with my family. This commitment to both my community and loved ones forms the heart of who I am and what I do.
-                        </p>
-                        <div class="mt-6 flex justify-center md:justify-start space-x-4">
-                             <a href="mailto:jaimiegarber@gmail.com" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Email Me</a>
-                             <a href="tel:+16617143945" class="inline-block bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">Call 661-714-3945</a>
+        <!-- About Section -->
+        <section id="about" class="py-20 px-6 bg-white">
+            <div class="container mx-auto max-w-5xl">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="w-full lg:w-1/2">
+                        <h2 class="text-3xl font-bold mb-6 text-blue-700">About Jaimie Garber</h2>
+                        <div class="space-y-4 text-gray-600 leading-relaxed">
+                            <p>
+                                Born and raised in Southern California, I have dedicated my life to serving our local animal community. My journey began in 2004 at a local veterinary office, gaining invaluable medical and behavioral insight.
+                            </p>
+                            <p>
+                                I am proud to offer <strong>professional dog training to San Dimas, La Verne, and Claremont</strong>. I hold Associate in Science degrees in Animal Training and Behavior from Moorpark College's prestigious E.A.T.M. program, ensuring a deep understanding of canine psychology.
+                            </p>
+                            <p>
+                                Outside of my professional life, I am a proud wife to Justin Garber and mother of two. My commitment to both my community and my loved ones forms the heart of my approach: I treat your dog like a member of the family.
+                            </p>
                         </div>
-                     </div>
-                 </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl bg-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=1200" 
+                            alt="Professional Dog Trainer Jaimie Garber" 
+                            class="w-full h-full object-cover aspect-square lg:aspect-auto min-h-[400px]"
+                            onerror="this.parentElement.innerHTML = '<div class=\'w-full h-full min-h-[400px] flex items-center justify-center bg-blue-50 text-blue-400\'><svg class=\'w-16 h-16\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\' /></svg></div>'"
+                        >
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="services" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Training Services & Philosophy</h2>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Why Train?</h3>
-                    <p class="leading-relaxed mb-4">
-                        Proper training is the key to a well-adjusted, happy pet. As your dedicated dog trainer, I focus on strengthening your bond with your furry companion, teaching them essential commands, and curbing any negative behavior. Let's nurture a harmonious relationship together.
-                    </p>
-                    <a href="#contact" class="text-blue-600 hover:underline font-medium">Learn More &raquo;</a>
+        <!-- Philosophy/Process Section -->
+        <section id="services" class="py-20 px-6 bg-gray-50">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900">Training Philosophy</h2>
+                    <p class="text-gray-500 mt-2">Personalized care for the San Gabriel Valley</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-500">
-                    <h3 class="text-2xl font-semibold mb-3 text-green-600">How We Train</h3>
-                    <p class="leading-relaxed mb-4">
-                        As a certified dog trainer, I use a combination of positive reinforcement and assertive techniques, individually tailored to your dog's unique personality and requirements. Witness the transformative journey as your dog grows and learns under expert guidance.
-                    </p>
-                     <a href="#qualifications" class="text-green-600 hover:underline font-medium">Learn More &raquo;</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-purple-500">
-                    <h3 class="text-2xl font-semibold mb-3 text-purple-600">What We Offer</h3>
-                    <p class="leading-relaxed mb-4">
-                        From basic obedience to advanced trick training, my comprehensive programs cater to dogs of all breeds and ages. I offer in-home, group, and private sessions, all while prioritizing your convenience and your pet's comfort. Gift your canine companion the advantage of good manners.
-                    </p>
-                     <a href="#in-home-training" class="text-purple-600 hover:underline font-medium">Learn More &raquo;</a>
-                </div>
-            </div>
 
-             <div id="in-home-training" class="bg-blue-50 p-8 rounded-lg shadow-md mb-12 scroll-mt-16">
-                 <h3 class="text-2xl font-bold mb-6 text-center text-blue-700">In-Home Dog Training</h3>
-                 <div class="grid md:grid-cols-2 gap-8 items-start">
-                     <div>
-                        <p class="text-lg leading-relaxed mb-4">
-                            I offer personalized in-home dog training designed to fit your dog's unique needs and your lifestyle. I come to you, making training convenient and comfortable for both you and your furry friend in the Southern California area.
-                        </p>
-                        <h4 class="text-xl font-semibold mb-3 text-blue-600">Why Choose In-Home Training?</h4>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
-                            <li><strong>Convenience:</strong> No need to travel to a training facility.</li>
-                            <li><strong>Personalized Attention:</strong> Focused training tailored to your dog.</li>
-                            <li><strong>Reduced Stress:</strong> Training in a familiar environment.</li>
-                            <li><strong>Address Specific Issues:</strong> Target problem behaviors where they happen.</li>
-                        </ul>
-                         <h4 class="text-xl font-semibold mb-3 text-blue-600">What's Included?</h4>
-                         <p class="mb-4">Each session is tailored to your dog's specific needs and may include:</p>
-                         <ul class="list-disc list-inside space-y-2 text-gray-700 columns-2">
-                            <li>Basic obedience</li>
-                            <li>Leash training</li>
-                            <li>Potty training</li>
-                            <li>Jumping</li>
-                            <li>Chewing</li>
-                            <li>Barking</li>
-                            <li>Separation anxiety</li>
-                            <li>Reactivity (dog & people)</li>
-                            <li>Fear & Aggression</li>
-                            <li>Customized training plan</li>
-                            <li>Ongoing support</li>
-                         </ul>
-                     </div>
-                     <div class="bg-white p-6 rounded-lg shadow-inner">
-                         <h4 class="text-xl font-semibold mb-4 text-blue-600 text-center">Pricing</h4>
-                         <div class="space-y-4 text-center">
-                             <div class="border border-gray-200 p-4 rounded-md">
-                                 <p class="text-lg font-medium">Single Session</p>
-                                 <p class="text-2xl font-bold text-blue-700">$200</p>
-                             </div>
-                             <div class="border border-blue-300 bg-blue-100 p-4 rounded-md">
-                                 <p class="text-lg font-medium">Package of 4 Sessions</p>
-                                 <p class="text-2xl font-bold text-blue-700">$600</p>
-                                 <p class="text-sm text-green-600 font-semibold">(Save $200!)</p>
-                             </div>
-                             <div class="border border-gray-200 p-4 rounded-md">
-                                 <p class="text-lg font-medium">Multi-Dog Charge</p>
-                                 <p class="text-xl font-bold text-blue-700">$50</p>
-                                 <p class="text-sm text-gray-600">(per session, per additional dog)</p>
-                             </div>
-                         </div>
-                          <div class="mt-6 text-center">
-                             <a href="#contact" class="inline-block bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition duration-300 text-lg font-medium">Get Started</a>
-                             <p class="text-sm text-gray-600 mt-2">Contact me today for a free consultation!</p>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-
-        </section>
-
-        <section id="qualifications" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">My Qualifications</h2>
-            <div class="space-y-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg flex items-start gap-6">
-                     <svg class="w-12 h-12 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 00-5.656 0H0v1.667h.611a3.066 3.066 0 005.656 0H18v-1.667h-.611a3.066 3.066 0 00-5.656 0H6.267zm8.076 1.667H18v1.067h-.611a3.066 3.066 0 01-5.656 0H6.267a3.066 3.066 0 01-5.656 0H0V8.855h.611a3.066 3.066 0 015.656 0h5.467a3.066 3.066 0 015.656 0H18V6.188zm-3.467 4.78H18v1.067h-.611a3.066 3.066 0 01-5.656 0H6.267a3.066 3.066 0 01-5.656 0H0v-1.067h.611a3.066 3.066 0 015.656 0h5.467a3.066 3.066 0 015.656 0H14.876zm-3.467 3.71H18v1.667h-.611a3.066 3.066 0 01-5.656 0H6.267a3.066 3.066 0 01-5.656 0H0v-1.667h.611a3.066 3.066 0 015.656 0h5.467a3.066 3.066 0 015.656 0H11.409z" clip-rule="evenodd"></path></svg>
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-2 text-blue-600">Certification Council for Professional Dog Trainers (CCPDT)</h3>
-                        <p class="leading-relaxed">
-                            Being a Dog Trainer Certified by the CCPDT (CPDT-KA) is an esteemed certification and a testament to a trainer's comprehensive understanding of canine behavior and proven training techniques. With such a professional, you are ensuring your dog receives a high-quality, scientifically-informed, and humane approach to training.
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                            <span class="font-bold text-xl">?</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Why?</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Proper training is the key to a happy pet. I focus on strengthening your bond, teaching essential commands, and curbing negative behavior for dogs throughout the SGV.
                         </p>
                     </div>
-                </div>
-                 <div class="bg-white p-8 rounded-lg shadow-lg flex items-start gap-6">
-                    <svg class="w-12 h-12 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 011.087-.225l1.884.942A1.002 1.002 0 009 9.94l.336-1.68a1 1 0 00-.788-1.18l-1.37-.49a1 1 0 00-.868.45l-1.5 2.5a1 1 0 00.215 1.39L9 15.561V18h2v-2.439l5.408-6.276a1 1 0 00.215-1.39l-1.5-2.5a1 1 0 00-.868-.45l-1.37.49a1 1 0 00-.788 1.18l.336 1.68a1 1 0 001.564.103l1.884-.942a.999.999 0 011.087.225L17 6.92a1 1 0 000-1.84l-7-3zM10 8a1 1 0 100-2 1 1 0 000 2z"></path></svg>
-                     <div>
-                        <h3 class="text-2xl font-semibold mb-2 text-blue-600">Teaching Zoo at Moorpark College (E.A.T.M. Program)</h3>
-                        <p class="leading-relaxed">
-                            Equipped with hands-on animal behavior knowledge and experience from this prestigious program, graduates bring a unique, multifaceted approach to dog training. This broad educational background ensures a thorough understanding of your dog's needs and the best methods to address them, drawing from experience with diverse species.
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6 text-green-600 text-xl">
+                            ⚙️
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">How?</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            I use a combination of positive reinforcement and assertive techniques, individually tailored to your dog's unique personality and requirements.
                         </p>
                     </div>
-                </div>
-                 <div class="bg-white p-8 rounded-lg shadow-lg flex items-start gap-6">
-                     <svg class="w-12 h-12 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
-                     <div>
-                        <h3 class="text-2xl font-semibold mb-2 text-blue-600">Veterinary Experience</h3>
-                        <p class="leading-relaxed">
-                            A trainer with extensive veterinary experience has a profound understanding of your pet's health, behavior, and overall wellbeing. This blend of medical and behavioral knowledge helps design a balanced, safe, and effective training program tailored to your dog's specific needs and physical condition.
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-purple-600 text-xl">
+                            🐕
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">What?</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            From basic obedience to advanced trick training, our programs cater to dogs of all breeds and ages while prioritizing your convenience.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-          <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Start Your Dog Training Today!</h2>
-          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
-            <p class="text-xl mb-6 leading-relaxed">
-              Ready to start training or have questions? Contact me today to discuss your dog's needs and schedule a consultation. Let's work together to build a happier relationship with your dog!
-            </p>
-            <div class="space-y-4 mb-8">
-              <p class="text-lg">
-                <span class="font-semibold">Email:</span>
-                <a href="mailto:jaimiegarber@gmail.com" class="text-blue-600 hover:underline">jaimiegarber@gmail.com</a>
-              </p>
-              <p class="text-lg">
-                <span class="font-semibold">Phone:</span>
-                <a href="tel:+16617143945" class="text-blue-600 hover:underline">661-714-3945</a>
-              </p>
-              <p class="text-gray-600 mt-2">Serving Southern California and surrounding areas.</p>
+        <!-- In-Home Training & Pricing -->
+        <section class="py-20 px-6 bg-white">
+            <div class="container mx-auto max-w-6xl">
+                <div id="in-home-training" class="bg-blue-600 rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                    <div class="p-10 lg:p-16 text-white lg:w-3/5">
+                        <h2 class="text-3xl font-bold mb-6">In-Home Dog Training</h2>
+                        <p class="text-blue-100 mb-8 text-lg">
+                            I bring the training to you. Serving <strong>San Dimas, La Verne, and Claremont</strong>, I address problem behaviors where they actually happen.
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <ul class="space-y-3 text-sm">
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Basic Obedience</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Potty Training</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Separation Anxiety</li>
+                            </ul>
+                            <ul class="space-y-3 text-sm">
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> SGV Reactivity</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Leash Training</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Fear & Aggression</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white p-10 lg:p-16 lg:w-2/5 flex flex-col justify-center">
+                        <div class="space-y-6">
+                            <div class="border-b border-gray-100 pb-4">
+                                <span class="text-gray-400 text-xs uppercase tracking-widest font-bold">Standard</span>
+                                <h4 class="text-xl font-bold mt-1">Single Session</h4>
+                                <p class="text-3xl font-black text-blue-600 mt-2">$200</p>
+                            </div>
+                            <div class="pb-4">
+                                <span class="text-blue-600 text-xs uppercase tracking-widest font-bold">Best Value</span>
+                                <h4 class="text-xl font-bold mt-1">Package (4 Sessions)</h4>
+                                <p class="text-3xl font-black text-blue-600 mt-2">$600 <span class="text-sm font-medium text-green-500 ml-2">Save $200!</span></p>
+                            </div>
+                            <p class="text-xs text-gray-400">* Multi-dog charge: $50 per session</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pt-6 border-t border-gray-200 max-w-lg mx-auto">
-
-            </div>
-          </div>
         </section>
 
+        <!-- Qualifications Section -->
+        <section id="qualifications" class="py-20 px-6 bg-gray-50">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold mb-12 text-center text-gray-900 uppercase tracking-tight">Professional Qualifications</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-6">
+                        <div class="bg-green-100 p-3 rounded-lg text-green-600 font-bold">CPDT</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">CCPDT Certified (CPDT-KA)</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A testament to a comprehensive understanding of canine behavior. You are ensuring your dog receives a high-quality, scientifically-informed, and humane approach.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-6">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600 font-bold">EATM</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Teaching Zoo at Moorpark College</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Graduate of the prestigious E.A.T.M. program with hands-on animal behavior experience across various species for a multifaceted training perspective.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-6 bg-white">
+            <div class="container mx-auto max-w-5xl">
+                <div class="bg-gray-900 rounded-3xl p-10 lg:p-16 text-white flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-4xl font-bold mb-6 italic leading-tight">Start Your Training in the SGV Today!</h2>
+                        <p class="text-gray-400 mb-10">
+                            Ready to schedule your first session in <strong>San Dimas, La Verne, or Claremont</strong>? Reach out via phone or email for a consultation.
+                        </p>
+                        <div class="space-y-6">
+                            <a href="tel:+16617143945" class="flex items-center text-xl hover:text-blue-400 transition-colors">
+                                <span class="bg-gray-800 p-3 rounded-full mr-4">📞</span>
+                                661-714-3945
+                            </a>
+                            <a href="mailto:jaimiegarber@gmail.com" class="flex items-center text-xl hover:text-blue-400 transition-colors">
+                                <span class="bg-gray-800 p-3 rounded-full mr-4">✉️</span>
+                                jaimiegarber@gmail.com
+                            </a>
+                        </div>
+                        <p class="mt-12 text-sm text-gray-500">
+                            Serving San Dimas, La Verne, Claremont, and the greater San Gabriel Valley.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <form id="contact-form" class="space-y-4">
+                            <input type="text" placeholder="Your Name" required class="w-full bg-gray-800 border-none rounded-xl p-4 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-600">
+                            <input type="email" placeholder="Your Email" required class="w-full bg-gray-800 border-none rounded-xl p-4 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-600">
+                            <textarea placeholder="Tell me about your dog..." rows="4" required class="w-full bg-gray-800 border-none rounded-xl p-4 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-600"></textarea>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition-all shadow-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 mt-16 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; <span id="current-year"></span> Jaimie Garber Dog Training. All rights reserved.</p>
-            <p class="text-sm mt-2">Serving Southern California | <a href="mailto:jaimiegarber@gmail.com" class="hover:underline">jaimiegarber@gmail.com</a> | <a href="tel:+16617143945" class="hover:underline">661-714-3945</a></p>
+    <footer class="bg-white border-t border-gray-100 py-12 px-6">
+        <div class="container mx-auto text-center">
+            <p class="font-bold text-gray-900 mb-2">Jaimie Garber Dog Training</p>
+            <p class="text-sm text-gray-500 mb-6">
+                Serving <strong>San Dimas, La Verne, Claremont, and the San Gabriel Valley</strong>
+            </p>
+            <div class="text-xs text-gray-400 space-y-2">
+                <p>&copy; <span id="current-year"></span> All Rights Reserved.</p>
+                <p>Modern Canine Behavioral Solutions</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
 
-    <!-- Success Modal -->
-<div id="successModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
-  <div class="bg-white rounded-lg shadow-lg p-8 text-center max-w-sm">
-    <p class="text-2xl font-bold mb-4 text-blue-700">✅ Thanks! Your message has been sent.</p>
-    <button onclick="document.getElementById('successModal').classList.add('hidden')" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Close</button>
-  </div>
-</div>
+            if (menuBtn && menu) {
+                menuBtn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    const isOpen = !menu.classList.contains('hidden');
+                    menuBtn.innerHTML = isOpen 
+                        ? `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>` 
+                        : `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>`;
+                });
+            }
 
+            // Close mobile menu on link click
+            const links = document.querySelectorAll('#mobile-menu a');
+            links.forEach(l => {
+                l.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    menuBtn.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>`;
+                });
+            });
+
+            // Footer Year
+            const y = document.getElementById('current-year');
+            if (y) y.textContent = new Date().getFullYear();
+
+            // Contact Form Demo
+            const f = document.getElementById('contact-form');
+            if (f) {
+                f.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const b = f.querySelector('button');
+                    const original = b.textContent;
+                    b.textContent = 'Message Sent!';
+                    b.disabled = true;
+                    b.classList.replace('bg-blue-600', 'bg-green-600');
+                    
+                    setTimeout(() => {
+                        alert('Thank you! In a live environment, this would notify Jaimie Garber about your request in the San Gabriel Valley.');
+                        b.textContent = original;
+                        b.disabled = false;
+                        b.classList.replace('bg-green-600', 'bg-blue-600');
+                        f.reset();
+                    }, 2000);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
